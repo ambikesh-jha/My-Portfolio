@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Ambikesh<span> Jha</span></a>
+        <!--Toogle write after complete navbar-->
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <!--Toogle End-->
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu();"><i style="font-size:24px" class="fa">&#xf015;</i></a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <!-- <li><a href="#experience" onclick="toggleMenu();">Experience</a></li> -->
+            <li><a href="#service" onclick="toggleMenu();"> Projects</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Certifications</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+
+        </ul>
+    </header>
+
+    <!--Home section Start-->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2><span>Hello </span>I'm <br>Ambikesh Jha</h2>
+            <a target="_" href="https://drive.google.com/file/d/16jh-2XkIwX5F3r-HPCJSJ1BwDvpJskCZ/view?usp=drive_link"
+                class="btn"><b>My Resume</b></a>
+        </div>
+    </section>
+
+    <!--Home section End-->
+
+    <!--About section Start-->
+    <section class="about" id="about">
+        <div class="row">
+            <!-- text section -->
+            <div class="col50">
+                <h2 class="titletext"> <span>A</span>bout <span>M</span>e</h2>
+                <p>A motivated final year Computer Science student specializing in data structures & algorithms, web
+                    development and machine learning. I possess a strong aptitude for problem-solving and excel in
+                    developing innovative solutions to intricate challenges. Eager to leverage my interdisciplinary
+                    background and technical skills to make significant contributions in the dynamic field of
+                    technology.</p><br>
+                <p> I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to
+                    contact me.</p><br>
+                <div class="section">
+                    <h4>MY EDUCATION:</h4>Jaypee University of Information Technology <span
+                        class="date"><b>20-24</b></span>
+                    <ul class="bullets">
+                        <li>Computer Science and Engineering <small class="description">(CGPA 7.88)</small></li>
+                        <li>Electronics and Communication Engineering <small class="description">(Minor)</small></li>
+                        <li>Data Science <small class="description">(specialisation)</small></li>
+                    </ul>
+                </div><br>
+                <div class="section">
+                    <h4>MY SKILLS:</h4>
+                    <ul class="bullets">
+                        <li><span class="description">Lanuages : </span><span>C </span>|<span> C++ </span>|<span> SQL
+                            </span></li>
+                        <li><span class="description">Web Dev : </span><span> HTML </span>|<span> CSS </span></li>
+                        <li><span class="description">Subjects : <br></span><span>Data Structures </span>|<span>
+                                Algorithms </span>|<span> Object Oriented Programming </span>|<span> Database Management
+                                System </span><span> </span>|<span> Operating System </span>|<span> Computer Networks
+                            </span>|<span> Machine Learning </span></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- image section -->
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="images/1685517081797-01.png" alt="men">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About section End-->
+
+    <!--Service or projects section Start-->
+    <section class="service" id="service">
+        <div class="title">
+            <h2 class="titletext"><span>L</span>atest<span>P</span>rojects</h2>
+            <p>Here you can find some projects that I created recently.</p>
+        </div>
+
+        <div class="wrapper">
+            <div class="center-line">
+                <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+            </div>
+            <div class="row row-1">
+                <section>
+                    <i class="icon fas fa-user"></i>
+                    <div class="details">
+                        <span class="title">My Portfolio</span>
+                        
+                        <span ><pre>10-Mar,24</pre></span>
+                    </div>
+                    <p>A sleek showcase of web development prowess. Crafted with HTML, CSS, and a dash of JavaScript, this portfolio responsive and adapts flawlessly across devices.
+                    </p>
+                    <div class="bottom">
+                        <a href="#">See Live</a>
+                        <i>~ Ambikesh</i>
+                    </div>
+                </section>
+            </div>
+
+            <div class="row row-2">
+                <section>
+                    <i class="icon fas fa-landmark"></i>
+                    <div class="details">
+                        <span class="title">OOPs Project</span>
+                        <span ><pre>20-Jan,23</pre></span>
+                    </div>
+                    <p>It a C++ project implementing a basic banking System incorporating OOPs principles.This program allows users to perform various operations such as creating accounts, viewing account details, updating information, searching for accounts, conducting transactions, and removing accounts</p>
+                    <div class="bottom">
+                        <a href="#">See Live</a>
+                        <i>~ Ambikesh</i>
+                    </div>
+                </section>
+            </div>
+
+            <div class="row row-1">
+                <section>
+                    <i class="icon fas fa-file-alt"></i>
+                    <div class="details">
+                        <span class="title">C++ Project</span>
+                        <span ><pre>18-Nov,23</pre></span>
+                    </div>
+                    <p>Student Record Management System is console-based C++ program allows you to manage student records, including creating, searching, displaying, deleting, and updating student information.it utilizes the concepts of object oriented programming</p>
+                    <div class="bottom">
+                        
+                        <a href="#">See Live</a>
+                        <i>~ Ambikesh</i>
+                    </div>
+                </section>
+            </div>
+
+            <div class="row row-2">
+                <section>
+                    <i class="icon fab fa-whmcs"></i>
+                    <div class="details">
+                        <span class="title">Machine Learning Projects</span>
+                        <span ><pre>29-Aug,23</pre></span>
+                    </div>
+                    <p>crop recommendation system using machine learning algorithms like Decision Trees, Gaussian Naive Bayes, SVM, and Logistic Regression.It utilizes gathered data on soil characteristics and environmental conditions, preprocesses the data, trains and evaluates multiple models, selects the best-performing model, and recommends suitable crops based on input conditions.</p>
+                    <div class="bottom">
+                        <a href="#">See Live</a>
+                        <i>~ Ambikesh</i>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Service section End-->
+
+    <!-- Cirtificates section Start-->
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titletext"><span>M</span>y<span> C</span>ertificates</h2>
+            <p>Get to know about my Cirtifications.</p>
+        </div>
+
+        <hr><h3 style="color: #2babff;">WEB DEVELOPMENT :</h3>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1mRIm6GCOCftxaUrNPI58VDC-_6g3oPXu/view?usp=drive_link"><img
+                            src="images/HTML_certificate.jpg" alt="" width="225px" height="225px"></a>
+                </div>
+                <div class="text">
+                    <h3>HTML Certificate</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1sF3_Iv8OfA_oMy132VRjZZXpHeZxkpII/view?usp=drive_link"><img
+                            src="images/CSS_certificate.jpeg" alt="" width="225px" height="225px"></a>
+
+                </div>
+                <div class="text">
+                    <h3>CSS Certificate</h3>
+                </div>
+            </div>
+        </div>
+
+        <hr><h3 style="color: #2babff;">DATA SCIENCE :</h3>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1Ef88d6RXjcRkwvdWu69aoizh7adn9FzF/view?usp=drive_link"><img
+                            src="images/Introduction_to_Data_Science.jpg" alt="" width="225px" height="225px"></a>
+                </div>
+                <div class="text">
+                    <h3>Data Science</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1d3QZQzvTV96YWSnLdahA0yIYAbE3Wlop/view?usp=drive_link"><img
+                            src="images/Introduction_to_machine_Learning.jpg" alt="" width="225px" height="225px"></a>
+
+                </div>
+                <div class="text">
+                    <h3>Machine Learning</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1d2DrDnjshe994TN2pXQQv-y1UkRieM8y/view?usp=drive_link"><img
+                            src="images/Exploratory_Data_Analysis.jpg" alt="" width="225px" height="225px"></a>
+
+                </div>
+                <div class="text">
+                    <h3>Eploratory Data Analysis</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1cl3dz6r2pG0dduuBFgaDfuplRRLc56HO/view?usp=drive_link"><img
+                            src="images/Data_Visualization_Using_Python.jpg" alt="" width="225px" height="225px"></a>
+
+                </div>
+                <div class="text">
+                    <h3>Data Visulaization</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <hr><h3 style="color: #2babff;">COURSES :</h3>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1eSDfB-vzmAWYRrbdyw23937Cbx4gIO-K/view?usp=drive_link"><img
+                            src="images/Cpp Certificate_page-0001.jpg" alt="" width="225px" height="225px"></a>
+                </div>
+                <div class="text">
+                    <h3>C++ Programming</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1U_glfx1JFaT_OsnJDEjUGMV4UcHJcAe1/view?usp=drive_link"><img
+                            src="images/Oops Certificate_page-0001.jpg" alt="" width="225px" height="225px"></a>
+
+                </div>
+                <div class="text">
+                    <h3>OOPs</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1otWJBHRf_HuIq6eVsdoz9wLbEiPJ1XHx/view?usp=drive_link"><img
+                            src="images/DSA_page-0001.jpg" alt="" width="225px" height="225px"></a>
+
+                </div>
+                <div class="text">
+                    <h3>DSA</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1_Cj275km75HBdU-iPfi_NbR9f3Obj4_W/view?usp=drive_link"><img
+                            src="images/DBMS Certificate_page-0001.jpg" alt="" width="225px" height="225px"></a>
+
+                </div>
+                <div class="text">
+                    <h3>DBMS Certificate</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <a target="_"
+                        href="https://drive.google.com/file/d/1n82lEtkahmS9T1bXwJBbrxdpJzhj09Wb/view?usp=drive_link"><img
+                            src="images/SQL_page-0001.jpg" alt="" width="225px" height="225px"></a>
+
+                </div>
+                <div class="text">
+                    <h3>SQL Certificate</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--cirtificates section End-->
+
+    <!--Contact section Start-->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titletext"><span>C</span>ontact <span>M</span>e</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
+        </div>
+
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <form action="#">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="inputBox">
+                    <textarea name="" placeholder="Message" required></textarea>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    <!--Contact section End-->
+
+    <!--Footer section Start-->
+    <div class="copyrightText">
+        <p>Made with &hearts; by <a href="#">ambikesh-jha</a>. All Right Reserved &copy; 2024</p>
+        <div class="footer-icons">
+            <a target="_" href="https://github.com/ambikesh-jha"><i class="fab fa-github"></i></a>
+            <!-- <a target="_" href="https://github.com/ambikesh-jha"><i style="font-size:24px" class="fa">&#xf015;</i></a> -->
+            <a target="_" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a target="_" href="https://www.linkedin.com/in/ambikesh-jha"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    
+    <!--Footer section End-->
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
