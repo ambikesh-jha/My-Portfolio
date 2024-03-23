@@ -15,7 +15,7 @@ p {
 
 /*Home Section Start*/
 
-
+/* 1. navigation bar*/
 header {
     position: fixed;
     top: 0;
@@ -71,7 +71,7 @@ header .navigation li a {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
-    padding: 2px 10px;
+    padding: 4px 10px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -87,7 +87,7 @@ header .navigation li a:hover {
     transition: 0.5s ease-in-out;
 }
 
-
+/* 2. banner  */
 .banner {
     position: relative;
     width: 100%;
@@ -103,6 +103,7 @@ header .navigation li a:hover {
 .banner .content {
     max-width: 3000px;
     text-align: center;
+    padding-top: 40px;
 }
 
 .banner .content h2 {
@@ -113,25 +114,110 @@ header .navigation li a:hover {
 .banner .content h2 span {
     color: #2babff ;
 }
+/* 3. resume button */
 
-.banner .content p {
+.btn {
     font-size: 1em;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background: #2babff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(0.9);
     color: #111;
+}
+
+/* 4. socials */
+.socials{
+    padding: 2%;
+}
+.banner .socials a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 35px;
+    margin-right: 2%;
+    margin-top: 3%;
+}
+.banner .socials a:hover{
+    transform: scale(1.2);
+    transition: 300ms ease-in-out;
+}
+
+/* 5. scroll down*/
+.container {
+	width: 100%;
+	height: 100%;
+    margin-top: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.field {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 300px;
+}
+.banner .content .container .field .scroll{
+    position: absolute; 
+    bottom: 10%;
+}
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid white;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.2s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #2babff;
+  	    border-bottom: 2px solid #2babff;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(20px);
+	}
+	50% {
+		transform: translate(0);
+	}
 }
 
 /*Home Section End*/
 
+/*About Section*/
 section {
-    padding: 100px;
+    padding: 2em;
 }
-
-/*About Section Start*/
 
 .row {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .row .col50 {
@@ -168,7 +254,7 @@ section {
     cursor: pointer;
 }
 .row .col50 .imgBx img:hover{
-    transform: scale(1.1);
+    transform: scale(1.09);
 }
 
 .section{
@@ -178,17 +264,24 @@ section {
     transition: all 1s ease;
 
 }
-.section:hover{
-    transform: scale(1.03);
+.about .section:hover{
+    background-color: skyblue;
+   
+}
+h4{
+    color: #111 ;
+}
+.heading{
+    width: 30%;
 }
 .date{
-    color: #007989;
     font-size: 13px;
     color: #111;
-    display: inline-block;
+    justify-content: center;
+    margin-left: 20px;
     padding: 2px 20px 0 20px;
     background: #2babff;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 .description{
     color: #007989;
@@ -199,7 +292,7 @@ section {
 
 /*About Section End*/
 
-/*Project Section Start*/
+/*Project Section*/
 
 .wrapper {
     max-width: 1080px;
@@ -240,11 +333,17 @@ section {
     transition: all 1s ease;
 
 }
+.title{
+    color: #2babff;
+}
 
 .wrapper .row section:hover{
     background: skyblue;
-    transform: scale(1.03);
     font-weight: 500;
+    .title{
+        color: #111;
+    }
+
 }
 
 .wrapper .row section::before {
@@ -313,7 +412,7 @@ section {
 
 .row section .bottom a {
     text-decoration: none;
-    background: #2babff;
+    background-color: #2babff;
     color: #fff;
     padding: 7px 15px;
     border-radius: 25px;
@@ -324,12 +423,12 @@ section {
 .row section .bottom a:hover {
     transform: scale(0.9);
     color: #111;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /*Project Section End*/
 
-/*Ceertificates section Start*/
+/*Ceertificates section */
 
 .title {
     width: 100%;
@@ -384,45 +483,23 @@ section {
     color: #111;
 }
 
-.menu .content .box .text h3:hover {
-    color: #2babff;
-    cursor: pointer;
-}
+/*Project section End*/
 
-.btn {
-    font-size: 1em;
-    color: #fff;
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 30px;
-    text-transform: uppercase;
-    background: #2babff;
-    letter-spacing: 2px;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    transform: scale(0.9);
-    color: #111;
-}
-
-/*Menu section End*/
-
-/*Contact Section Start*/
+/*Contact Section */
 
 .contact {
-    background-color: #d9eff3;
+    background-color: rgba(135, 207, 235, 0.788);
     background-size: cover;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contactForm {
     padding: 75px 50px;
     background: rgba(255, 255, 255, 0.757);
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);    /* box shadow used here*/
-    max-width: 500px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);  
+    min-width: 30%;
     margin-top: 50px;
     border-radius: 20px;
 }
@@ -442,9 +519,8 @@ section {
 
 .contactForm .inputBox input, .contactForm .inputBox textarea {
     width: 100%;
-    border: 1px solid #555;
+    border: 1px solid #2babff;
     padding: 10px;
-    color: #111;
     outline: none;
     font-size: 15px;
     font-weight: 300;
@@ -459,7 +535,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     max-width: 100px;
-    border: none;
+    border: 1px solid #007989;
     cursor: pointer;
     border-radius: 25px;
     transition: all 0.3s ease;
@@ -473,7 +549,7 @@ section {
 
 /*Contact Section End*/
 
-/*Fotter Section Start*/
+/*Fotter Section */
 
 .copyrightText {
     padding: 8px 40px;
@@ -503,9 +579,6 @@ section {
     margin-right: 3px;
     margin-bottom: 5px;
 }
-
-
-
 .fa-instagram {
     color: #e41a1a;
 }
@@ -519,7 +592,8 @@ section {
 }
 
 .copyrightText .footer-icons a:hover {
-    font-size: 22px;
+    transform: scale(1.2);
+    transition: all 500ms ease-in-out;
 }
 
 @media (max-width: 440px) {
@@ -532,11 +606,11 @@ section {
 
 /*Fotter Section End*/
 
-/* Service Responsive Section Start*/
+/* Project Responsive Section*/
 
 @media (max-width: 790px) {
     .wrapper .center-line {
-        left: 5px;
+        left: 50px;
     }
     .wrapper .row {
         margin: 30px 0 3px 25px;
@@ -566,7 +640,7 @@ section {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 950px) {
     .wrapper .center-line {
         left: 5px;
     }
@@ -586,7 +660,7 @@ section {
 
 /* Service Responsive Section End*/
 
-/* Navbar Responsive Section Start*/
+/* Navbar Responsive Section*/
 
 @media (max-width: 950px) {
     header, header.sticky {
